@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/holo_blue_light"
+    android:layout_height="match_parent"
+    tools:ignore="ContentDescription"
+
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="match_parent"
+            android:layout_height="485dp"
+            android:contentDescription="@string/img_songpic"
+            app:srcCompat="@android:color/background_light" />
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            style="@style/Widget.AppCompat.SeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="61dp" />
+
+        <LinearLayout
+            android:layout_width="409dp"
+            android:layout_height="130dp">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="0dp"
+                android:layout_height="126dp"
+                android:layout_weight="1"
+                app:srcCompat="@android:drawable/ic_media_previous" />
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="136.3dp"
+                android:layout_height="127dp"
+                android:contentDescription="@string/playstopbtn"
+                app:srcCompat="@android:drawable/ic_media_pause" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="136.3dp"
+                android:layout_height="127dp"
+                app:srcCompat="@android:drawable/ic_media_next" />
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seekBar3"
+            android:layout_width="match_parent"
+
+            android:layout_height="54dp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
