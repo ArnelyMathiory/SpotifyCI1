@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         coverImage= findViewById(R.id.imageView9);
-       
+
         Glide.with(this).load("https://img.youtube.com/vi/<58hoktsqk_Q>/0.jpg").into(coverImage);
         player =  MediaPlayer.create(getApplicationContext(), R.raw.ladygaga);
 
